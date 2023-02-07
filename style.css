@@ -211,3 +211,18 @@ redes sociais handlers
   transform: scale(1.5);
   transition: 0.6s cubic-bezier(0.6, 0.03, 0.28, 0.98);
 }
+.locais {
+  background-color: #19191f;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.location {
+  padding: 8rem;
+}
+.textoroms {
+  color: #dedede;
+  padding: 4rem;
+  text-align: justify;
+  line-height: 1.5;
+}
