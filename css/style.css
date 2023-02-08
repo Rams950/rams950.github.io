@@ -13,10 +13,11 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .light-theme {
   --cor-principal: #19191f;
-  --cor-secundaria: #5e5c5c;
+  --cor-secundaria: #eee;
   --nav-color: #19191f;
   --cinza: #19191f;
 }
@@ -26,6 +27,13 @@ html {
 /**********************/
 /**  topo da página **/
 /*********************/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
 .logo {
   width: 10rem;
   transition: 0.5s cubic-bezier(0.6, 0.03, 0.28, 0.98);
@@ -40,7 +48,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 1.3rem;
 }
 .logo-image {
   width: 5rem;
@@ -94,12 +102,13 @@ a:hover::before {
   border-radius: 10rem 0 0 0;
   */
   background-color: var(--cor-secundaria);
+  margin-top: 6.9rem;
 }
 .hero-img {
   padding-top: 0rem !important;
   padding: 7rem;
   width: 100%;
-  margin-top: -5rem;
+  margin-top: 2rem;
 }
 .assinatura {
   padding-left: 2rem !important;
@@ -125,6 +134,7 @@ links para web site da uta
 redes sociais handlers
 */
 .intere {
+  padding-top: 7rem;
   background-color: var(--cor-secundaria);
 }
 .title-intere:hover {
@@ -200,7 +210,8 @@ redes sociais handlers
   width: 100%;
   display: grid;
   align-items: center;
-  padding: 5rem;
+  margin-top: 5rem;
+  padding: 4rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
