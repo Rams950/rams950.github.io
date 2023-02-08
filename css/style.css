@@ -9,6 +9,7 @@
   --cor-secundaria: #19191f;
   --brancos: #dedede;
   --cinza: #8c8c8c;
+  --nav-bar-shadow: #00ffff0d;
 }
 html {
   font-size: 62.5%;
@@ -20,6 +21,7 @@ html {
   --cor-secundaria: #eee;
   --nav-color: #19191f;
   --cinza: #19191f;
+  --nav-bar-shadow: #4f4f4f0d;
 }
 .light-theme .iconmodes {
   width: 6.11rem;
@@ -49,6 +51,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1.3rem;
+  box-shadow: 2px 2px 2px 1px var(--nav-bar-shadow);
 }
 .logo-image {
   width: 5rem;
