@@ -1,18 +1,20 @@
 var icon = document.getElementById("icon");
 var heroimg = document.getElementById("heroimg");
- 
+
 icon.onclick = function(){
  document.body.classList.toggle("light-theme");
  if(document.body.classList.contains("light-theme")){
    icon.src ="svg/light-mode.svg";
    heroimg.src ="img/ramilton_hero_img_Night.png";
+   
+   
+
  }else{
    icon.src = "svg/dark-mode.svg"
    heroimg.src ="img/Ramilton-hero-img-dark.png";
    
    }
 }
-
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("link").on('click', function(event) {

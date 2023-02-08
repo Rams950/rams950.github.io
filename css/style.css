@@ -20,6 +20,9 @@ html {
   --nav-color: #19191f;
   --cinza: #19191f;
 }
+.light-theme .iconmodes {
+  width: 6.11rem;
+}
 /**********************/
 /**  topo da página **/
 /*********************/
@@ -242,8 +245,5 @@ redes sociais handlers
 /*************/
 
 .iconmodes {
-  width: 6rem;
-}
-.iconmodeslight {
-  width: 5.7rem;
+  width: 7rem;
 }
