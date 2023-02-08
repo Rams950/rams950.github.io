@@ -6,9 +6,6 @@ icon.onclick = function(){
  if(document.body.classList.contains("light-theme")){
    icon.src ="svg/light-mode.svg";
    heroimg.src ="img/ramilton_hero_img_Night.png";
-   
-   
-
  }else{
    icon.src = "svg/dark-mode.svg"
    heroimg.src ="img/Ramilton-hero-img-dark.png";
