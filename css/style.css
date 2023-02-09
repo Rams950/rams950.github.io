@@ -19,6 +19,7 @@ html {
 .light-theme {
   --cor-principal: #19191f;
   --cor-secundaria: #eee;
+  --brancos: #111111;
   --nav-color: #19191f;
   --cinza: #19191f;
   --nav-bar-shadow: #4f4f4f0d;
@@ -27,7 +28,8 @@ html {
   width: 6.11rem;
 }
 .light-theme #myBtn {
-  background-color: var(--brancos);
+  display: none;
+  background-color: var(--cor-secundaria);
   box-shadow: 2px 3px 3px 2px var(--nav-bar-shadow);
 }
 /**********************/
@@ -270,20 +272,42 @@ redes sociais handlers
 /*******************/
 /** TO TOP BUTTON */
 /*****************/
-#myBtn {
-  display: block; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 1000; /* Make sure it does not overlap */
-  /* Text color */
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+  display: none;
+  place-items: center;
+  border-radius: 5px;
+  cursor: pointer;
   border-width: 0;
-  border-style: none;
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 1.5rem; /* Some padding */
-  border-radius: 1.5rem; /* Rounded corners */
 }
-.scrolup {
-  width: 2.5rem;
-  padding: 0;
+#progress-value {
+  display: block;
+  height: calc(100% - 8px);
+  width: calc(100% - 8px);
+  background-color: #eee;
+  display: grid;
+  border-radius: 5px;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+}
+.carregando {
+  height: 20rem;
+  width: 100%;
+  background-color: var(--cor-secundaria);
+}
+.carregando-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  text-align: center;
+  color: var(--cor-principal);
+}
+.icon-pro {
+  width: 10rem;
 }
