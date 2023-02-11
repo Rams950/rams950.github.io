@@ -6,10 +6,13 @@
 }
 :root {
   --cor-principal: #00ffff;
-  --cor-secundaria: #19191f;
+  --cor-secundaria: #010b13;
   --brancos: #dedede;
   --cinza: #8c8c8c;
   --nav-bar-shadow: #00ffff0d;
+}
+.nav-bar{
+  display: none !important ;
 }
 html {
   font-size: 62.5%;
@@ -20,7 +23,7 @@ html {
   --cor-principal: #19191f;
   --cor-secundaria: #eee;
   --brancos: #111111;
-  --nav-color: #19191f;
+  --nav-color: #010b13;
   --cinza: #19191f;
   --nav-bar-shadow: #4f4f4f0d;
 }
@@ -32,6 +35,7 @@ html {
   background-color: var(--cor-secundaria);
   box-shadow: 2px 3px 3px 2px var(--nav-bar-shadow);
 }
+
 /**********************/
 /**  topo da página **/
 /*********************/
@@ -43,6 +47,7 @@ header {
   z-index: 10000;
 }
 .logo {
+  fill: var(--cor-principal);
   width: 10rem;
   transition: 0.5s cubic-bezier(0.6, 0.03, 0.28, 0.98);
   transform: scale(0.8);
@@ -71,7 +76,7 @@ header {
   color: var(--nav-color);
   font-size: 2rem;
   list-style: none;
-  gap: 8rem;
+  gap: 3rem;
   cursor: pointer;
 }
 a {
@@ -110,18 +115,17 @@ a:hover::before {
   /*
   border-radius: 10rem 0 0 0;
   */
-  background-color: var(--cor-secundaria);
-  margin-top: 6.9rem;
+  background-color: var(--cor-secundaria); 
 }
 .hero-img {
-  padding-top: 0rem !important;
   padding: 7rem;
   width: 100%;
   margin-top: 2rem;
 }
 .assinatura {
+  fill: var(--cor-principal);
   padding-left: 2rem !important;
-  margin-top: 3rem;
+  margin-top: 10rem;
 }
 .hero-titles {
   padding: 5rem;
@@ -165,6 +169,17 @@ redes sociais handlers
   background-color: var(--cor-secundaria);
   grid-template-columns: 1fr 1fr 1fr;
 }
+.d {
+  fill: var(--cor-principal);
+}
+.e {
+  fill: var(--cor-principal);
+}
+.e {
+  stroke: var(--cor-secundaria);
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+}
 .card1 {
   width: 100%;
   height: 100%;
@@ -186,7 +201,7 @@ redes sociais handlers
 .card1,
 .card2,
 .card3 {
-  padding: 15rem;
+  padding:  15rem;
   padding-top: 10rem !important;
 }
 .card1:hover,
@@ -207,6 +222,7 @@ redes sociais handlers
 /***********************/
 
 .bibliografia {
+  padding-top: 10rem;
   padding-bottom: 5rem;
   background-color: var(--cor-secundaria);
   align-items: center;
@@ -272,6 +288,10 @@ redes sociais handlers
 /*******************/
 /** TO TOP BUTTON */
 /*****************/
+.letra-r {
+  font-size: 155.54px;
+  font-weight: 800;
+}
 #progress {
   position: fixed;
   bottom: 20px;
@@ -288,12 +308,12 @@ redes sociais handlers
   display: block;
   height: calc(100% - 8px);
   width: calc(100% - 8px);
-  background-color: #eee;
+  background-color: var(--cor-secundaria);
   display: grid;
   border-radius: 5px;
   place-items: center;
   font-size: 35px;
-  color: #001a2e;
+  fill: var(--cor-principal);
 }
 .carregando {
   height: 20rem;
@@ -310,4 +330,28 @@ redes sociais handlers
 }
 .icon-pro {
   width: 10rem;
+}
+
+/*************************/
+/**  SCROLL BAR STYLE  **/
+/***********************/
+/* width */
+::-webkit-scrollbar {
+  width: 1.5rem;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--cor-secundaria); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--cor-principal); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:var(--cinza); 
 }

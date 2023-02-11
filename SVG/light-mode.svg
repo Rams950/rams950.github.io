@@ -3,7 +3,7 @@
   <defs>
     <style>
       .d {
-        fill: aqua;
+        fill: #ffc40d;
         box-shadow: 2px 2px 2px 2px #00ffff;
       }
     </style>
