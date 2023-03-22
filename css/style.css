@@ -11,9 +11,7 @@
   --cinza: #8c8c8c;
   --nav-bar-shadow: #00ffff0d;
 }
-.nav-bar{
-  display: none !important ;
-}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
