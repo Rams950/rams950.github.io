@@ -9023,12 +9023,12 @@ function Rd() {
               }),
               v.jsx("li", {
                 children: v.jsx("a", {
-                  href: "/portfolio",
+                  href: "/portofolio",
                   className: "--text-primary hover:text-accent",
-                  children: "Portfólio",
+                  children: "Portofólio",
                 }),
               }),
-              
+
               v.jsx("li", {
                 children: v.jsx("a", {
                   href: "/sobre",
@@ -9038,6 +9038,7 @@ function Rd() {
               }),
               v.jsx("li", {
                 children: v.jsx("a", {
+                  href: "/contacto",
                   className:
                     "bg-primary --text-background py-2 px-6 rounded-xl font-semibold hover:bg-accent",
                   children: "Contato",
