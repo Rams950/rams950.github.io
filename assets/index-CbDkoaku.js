@@ -9009,35 +9009,29 @@ function Rd() {
             children: [
               v.jsx("li", {
                 children: v.jsx("a", {
-                  href: "#home",
+                  href: "/",
                   className: "--text-primary hover:text-accent",
                   children: "Home",
                 }),
               }),
               v.jsx("li", {
                 children: v.jsx("a", {
-                  href: "#servicos",
+                  href: "/servicos",
                   className: "--text-primary hover:text-accent",
                   children: "Serviços",
                 }),
               }),
               v.jsx("li", {
                 children: v.jsx("a", {
-                  href: "#portfolio",
+                  href: "/portfolio",
                   className: "--text-primary hover:text-accent",
                   children: "Portfólio",
                 }),
               }),
+              
               v.jsx("li", {
                 children: v.jsx("a", {
-                  href: "#blog",
-                  className: "--text-primary hover:text-accent",
-                  children: "Blog",
-                }),
-              }),
-              v.jsx("li", {
-                children: v.jsx("a", {
-                  href: "#sobre",
+                  href: "/sobre",
                   className: "--text-primary hover:text-accent",
                   children: "Sobre",
                 }),
